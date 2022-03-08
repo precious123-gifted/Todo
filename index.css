@@ -1,0 +1,156 @@
+body{background-color: rgb(120, 125, 133);
+    height: 97vh;
+    user-select: none;
+display: flex;
+
+justify-content: center;
+align-items: center;}
+.taskContainer{
+   
+    width: 50%;
+    height: 520px;
+    background-color: rgb(255, 255, 255);
+    background-image: url(paper.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: -34.1%;
+    border-left: 3px dotted grey;
+    border-right: 3px dotted grey;
+    display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+
+}
+
+.taskHeader{
+    background-color: rgb(76, 110, 161);
+    height: 90px;
+    width: 85%;
+    display: flex;
+   flex-direction: column;
+justify-content: center;
+
+border-bottom-left-radius: 20px;
+border-bottom-right-radius: 20px;
+}
+.header{
+  position: absolute;
+  color: white;
+  color-interpolation-filters: linearRGB;
+  margin-left: 30px;
+
+}
+.iNB{display: flex;
+   align-self: center;
+    justify-content: space-between;
+    
+width: 50%;}
+.input{
+    width: 80%;
+    height: 25px;
+    outline: none;
+}
+.BTN{display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(78, 78, 78);
+    color: white;
+    height: 30px;
+    width:  30px;
+    cursor: cell;
+    user-select: none;
+    
+}
+.BTN:active{
+    background-color:white ;
+    color: rgb(78, 78, 78);
+}
+.listContainer{
+ 
+    display: flex;
+flex-direction: column;
+height: 420px;
+    width: 100%;  
+    overflow-y: auto;
+
+}
+.taskDiv{
+    width: 92%;
+    height: 40PX;
+    display: flex;
+    
+ justify-content: center;
+ margin-bottom: 10px;
+ 
+}
+#doneBTN{
+    align-self: center;
+    height: 20PX;
+    width: 45px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: grabbing;
+    margin-right: 10px;
+    font-size: large;
+    visibility: hidden;
+}
+.inActive{
+    background-color: honeydew;
+    border: 1px solid rgb(39, 58, 39);
+    color: rgb(39, 58, 39);
+}
+.active{
+    background-color: rgb(39, 58, 39);
+    border: 1px solid rgb(49, 255, 49);
+    color: honeydew;
+}
+.item{
+    
+    border: 2px solid rgb(76, 110, 161);
+    background-image: url(paper.jpg);
+    background-size: cover;
+    background-position-y: -34.1%;
+    width: 80%;
+    height: 30PX;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    align-items: center;
+    
+}
+.itemName{
+    width: 80%; 
+    height: 80%;
+   background: none;
+   border: none;
+   padding-bottom: 5px;
+   outline: none;
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;   
+}
+.itemName::selection{
+    background-color: rgba(42, 107, 42, 0);
+}
+input::selection{
+    background-color: rgb(76, 110, 161);
+}
+::-webkit-scrollbar{
+  width: 0;
+}
+.ENC{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+     cursor: grabbing;
+}
+.checkBTN{
+    visibility: hidden;
+}
+
+.deleteBTN{
+    cursor: alias;
+}
